@@ -29,7 +29,7 @@ export const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
             <img
-              src="/src/assets/logo.jpg"
+              src="/team/logo.jpg"
               alt="Auooshadh Logo"
               className="w-10 h-10 rounded-xl object-cover"
             />
@@ -45,8 +45,8 @@ export const Navbar = () => {
                 key={link.path}
                 to={link.path}
                 className={`px-4 py-2 rounded-lg font-medium transition-all duration-200 ${location.pathname === link.path
-                    ? "bg-primary text-primary-foreground"
-                    : "text-foreground/70 hover:text-foreground hover:bg-muted"
+                  ? "bg-primary text-primary-foreground"
+                  : "text-foreground/70 hover:text-foreground hover:bg-muted"
                   }`}
               >
                 {link.name}
@@ -89,8 +89,8 @@ export const Navbar = () => {
                     to={link.path}
                     onClick={() => setIsOpen(false)}
                     className={`block px-4 py-3 rounded-lg font-medium transition-all ${location.pathname === link.path
-                        ? "bg-primary text-primary-foreground"
-                        : "text-foreground/70 hover:text-foreground hover:bg-muted"
+                      ? "bg-primary text-primary-foreground"
+                      : "text-foreground/70 hover:text-foreground hover:bg-muted"
                       }`}
                   >
                     {link.name}
