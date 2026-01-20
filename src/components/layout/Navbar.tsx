@@ -28,9 +28,9 @@ export const Navbar = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <img 
-              src="/src/assets/logo.jpeg" 
-              alt="Auooshadh Logo" 
+            <img
+              src="/src/assets/logo.jpg"
+              alt="Auooshadh Logo"
               className="w-10 h-10 rounded-xl object-cover"
             />
             <span className="text-2xl font-heading font-bold text-gradient">
@@ -44,11 +44,10 @@ export const Navbar = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`px-4 py-2 rounded-lg font-medium transition-all duration-200 ${
-                  location.pathname === link.path
+                className={`px-4 py-2 rounded-lg font-medium transition-all duration-200 ${location.pathname === link.path
                     ? "bg-primary text-primary-foreground"
                     : "text-foreground/70 hover:text-foreground hover:bg-muted"
-                }`}
+                  }`}
               >
                 {link.name}
               </Link>
@@ -89,11 +88,10 @@ export const Navbar = () => {
                     key={link.path}
                     to={link.path}
                     onClick={() => setIsOpen(false)}
-                    className={`block px-4 py-3 rounded-lg font-medium transition-all ${
-                      location.pathname === link.path
+                    className={`block px-4 py-3 rounded-lg font-medium transition-all ${location.pathname === link.path
                         ? "bg-primary text-primary-foreground"
                         : "text-foreground/70 hover:text-foreground hover:bg-muted"
-                    }`}
+                      }`}
                   >
                     {link.name}
                   </Link>
